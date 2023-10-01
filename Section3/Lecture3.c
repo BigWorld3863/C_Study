@@ -3,13 +3,15 @@
 
 int main()
 {
-	int i = 0, j = 0;
+	float won = 0.0f;
+	float dollar = 0.0f;
 	
-	printf("Input two integers\n");
+	printf("Input Won\n");
+	scanf("%f", &won); 
 	
-	scanf("%d%d", &i, &j); 
+	dollar = won * 0.00089f;
 	
-	printf("Value is %d\n", i);
+	printf("%f Won = %f $\n", won, dollar);
 	
 	return 0;
 }
