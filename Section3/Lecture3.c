@@ -13,5 +13,7 @@ int main()
 	
 	printf("%f Won = %f $\n", won, dollar);
 	
+	
+	
 	return 0;
 }
