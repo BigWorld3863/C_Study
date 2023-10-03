@@ -17,7 +17,13 @@ int main()
 	printf("%s\n", str1);
 	printf("%s\n", str2);
 	
-	printf("%hhi
+	printf("%hhi %hhi %hhi %hhi %hhi\n", str2[0], str2[1], str2[2], str2[3],str2[4]);
+	
+	// char str3[10] = "Hello, World"; // array size is not enough
+	char str3[20] = "Hello, \0World";
+	printf("%s\n", str3);
+	printf("%c\n", str3[10]);
+	printf("%c\n", str3[11]);
 	
 	return 0;
 }
