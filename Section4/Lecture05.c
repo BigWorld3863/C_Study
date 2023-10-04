@@ -1,12 +1,14 @@
 #include <stdio.h>
 #define PI 3.141592f
-#define AI_NAME "Jarv
+#define AI_NAME "Friday"
 
 int main()
-{
+{	
+	//const float pi = 3.141592f
+	
 	float radius, area, circum;
 	
-	printf("I")
+	printf("I'm %s.\n", AI_NAME);
 	printf("Input radius\n");
 	
 	scanf("%f", &radius);
