@@ -14,7 +14,8 @@ int main()
 	draw((int)f);
 
 	// Arguments vs Parameters
-	
+	// actual argument, actual parameter -> argument (values)
+	// formal argument, formal parameter -> parameter (variables)
 	
 	return 0;
 }
