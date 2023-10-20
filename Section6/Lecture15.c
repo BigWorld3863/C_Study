@@ -1,13 +1,15 @@
 // Nested loops
 #include <stdio.h>
 
-#define NUM_ROWS	5
+#define NUM_ROWS	12
 #define FIRST_CHAR	'A'
-#define LAST_CHAR	'J'
+#define LAST_CHAR	'L'
 
 int main()
 {	
 	// exercise 1
+	
+	// my code
 	
 	// char first_char = 'A';
 	// char last_char = '\0';
@@ -31,6 +33,8 @@ int main()
 	// 	printf("\n");
 	// }
 	
+	// in lecture
+	
 	int r; // row loop
 	int c; // character loop
 	
@@ -44,6 +48,8 @@ int main()
 	
 	// exercise 2
 	
+	// my code
+	
 	// int rows = LAST_CHAR - FIRST_CHAR + 1;
 	// char last_char = FIRST_CHAR;
 	
@@ -56,26 +62,47 @@ int main()
 	// 	printf("\n");
 	// }
 	
-	for (r = 0;)
+	// my code 2
 	
+	// for (r = FIRST_CHAR; r <= LAST_CHAR; r++)
+	// {
+	// 	for (c = FIRST_CHAR; c <= r; c++)
+	// 		printf("%c ", c);
+		
+	// 	printf("\n");
+	// }
+
+	// in lecture
+
+	// for (r = 0; r <= NUM_ROWS; ++r)
+	// {
+	// 	for (c = FIRST_CHAR; c <= FIRST_CHAR + r; ++c)
+	// 		printf("%c ", c);
+		
+	// 	printf("\n");
+	// }
+
+	// exercise 3
 	
+	// my code
 	
+	// for (r = FIRST_CHAR; r <= LAST_CHAR; r++)
+	// {
+	// 	for (c = r; c <= LAST_CHAR; c++)
+	// 		printf("%c ", c);
+		
+	// 	printf("\n");
+	// }
 	
+	// in lecture
 	
-	//think another way;
-real last char = k
-fake last char = first char
-for (fake last char <= real last char; fake last char++)
-	
-	for (first char <=fake last char; first char++)
-		printf(fist char)
-	
-	printf("\n")
-	
-	
-	
-	
-	
+	for (r = 0; r <= NUM_ROWS; ++r)
+	{
+		for (c = FIRST_CHAR + r; c <= FIRST_CHAR + NUM_ROWS; ++c)
+			printf("%c ", c);
+		
+		printf("\n");
+	}
 	
 	return 0;
 }
