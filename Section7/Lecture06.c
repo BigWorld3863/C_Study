@@ -42,12 +42,16 @@ int main()
 	
 	scanf("%u", &num);
 
-	for (unsigned i = 2; i < num; i++)
+	for (unsigned i = 2; (i * i) <= num; i++)
 	{
 		if (num % i == 0)
 		{
 			isPrime = 0;
-			printf("%u is divisible by %u\n", num, i);
+			
+			if (num == i * i)
+				printf("%u is divisible by %u\n", num, i);
+			else
+				printf("%u is divisible by %u and %u\n", num, i, num/i);
 		}
 	}
 	
