@@ -6,12 +6,12 @@
 #define NAME "Sung-Hyun Shin"
 #define ADDRESS "Seoul, Korea"
 
-void print_multiple_chars(char c, int n_stars);
+void print_multiple_chars(char c, int n_stars);// prototype
 void print_cantered_str(char str[]);
 
 int main()
 {
-	print_multiple_chars('*', WIDTH);
+	print_multiple_chars('*', WIDTH);// argument, actual (argument/parameter)
 	
 	print_cantered_str(NAME);
 	print_cantered_str(ADDRESS);
@@ -22,7 +22,7 @@ int main()
 	return 0;
 }
 
-void print_multiple_chars(char c, int n_stars)
+void print_multiple_chars(char c, int n_stars)// parameter, formal (argument/parameter)
 {
 	for (int i= 0; i < n_stars; i++)
 		printf("%c", c);
