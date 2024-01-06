@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
 	//long l = strtol(str2, &end, 16);
 	//printf("%s %ld %s %d\n", str2, l, end, (int)*end);
 
-	/*
+	/*/
 		Numbers to strings
 		Use sprintf() instead of itoa(), ftoa()
 	*/
