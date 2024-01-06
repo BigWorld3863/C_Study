@@ -4,7 +4,7 @@ void swap(int *u, int *v)	//call by pointer
 {	
 	printf("%p %p\n", u, v); 
 	
-	int temp = *u;
+	int temp = *u; //redirection
 	*u = *v;
 	*v = temp;
 }
